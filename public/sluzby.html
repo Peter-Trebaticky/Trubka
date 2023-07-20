@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Trubka</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="min-h-screen bg-gradient-to-r from-white to-blue-200 grid">
+            <div class="h-24 bg-primary sticky top-0 ">
+                <div class="w-11/12 xl:w-10/12 2xl:w-6/12 mx-auto">
+                    <a href="#"><img src="img/logo.jpg" data-aos="fade-down" data-aos-duration="1500"
+                            class="h-16 my-4 inline-block " alt="TRUBKA.INFO"></a>
+
+                    <button onclick="downTel()"
+                        class="telbutton hidden sm:inline-block w-10 p-2 pl-3 ml-6 font-bold rounded-b-xl -skew-x-12 absolute drop-shadow-lg hover:bg-red-400 bg-red-600"><i
+                            class="fa fa-phone pr-2 "></i></button>
+                    <a id="tel" href="tel:+4219"
+                        class="tel hover:w-48 hover:p-3 hover:pl-4 w-44 p-2 ml-6 float-left font-bold rounded-b-xl -skew-x-12 hidden sm:inline-block hover:border-black hover:drop-shadow-xl drop-shadow-md absolute hover:bg-red-400 bg-red-600"><i
+                            class="fa fa-phone pr-2 "></i>+421 911 222 333</a>
+                    <a href="tel:+4219"
+                        class="telbutton sm:hidden w-10 p-2 pl-3 ml-6 font-bold rounded-b-xl -skew-x-12 absolute drop-shadow-lg hover:bg-red-400 bg-red-600"><i
+                            class="fa fa-phone pr-2 "></i></a>
+
+                    <div class="nav gap-x-20 float-right m-7 relative hidden xl:flex">
+                        <a href=""
+                            class=" px-2 py-2 text-white font-medium text-xl hover:text-yellow-700 active:text-yellow-700 ">Úvod</a>
+                        <a href="sluzby.html"
+                            class="px-2 py-2 text-white font-medium text-xl hover:text-yellow-700 active:text-yellow-700">
+                            <button href="sluzby.html" class="openbtn">Služby <i
+                                    class="fa fa-angle-double-down animate-bounce w-6 h-6"></i></button></a>
+                        <div id="mySidepanelPrim" class="sidepanel absolute mt-16 ml-36 text-left">
+                            <a href="">Čistenie kanalizácií</a>
+                            <a href="">Krtkovanie</a>
+                            <a href="">Monitoring potrubí</a>
+                            <a href="">Bezvýkopové opravy</a>
+                            <a href="">Čistenie lapačov tukov</a>
+                        </div>
+                        <a href=""
+                            class="px-2 py-2 text-white font-medium text-xl hover:text-yellow-700 active:text-yellow-700">Kontakt</a>
+                    </div>
+
+                    <div id="mySidepanelSec" class="sidepanelsec">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavSec()">&times;</a>
+                        <ul>
+                            <li>
+                                <a href="#">Úvod</a>
+                            </li>
+                            <li>
+                                <a href="#">Služby</a>
+                            </li>
+
+                            <ul class="ml-5">
+                                <li>
+                                    <a href="#" style="white-space:nowrap">Čistenie kanalizácií</a>
+                                </li>
+                                <li>
+                                    <a href="#">Krtkovanie</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="white-space:nowrap">Monitoring potrubí</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="white-space:nowrap">Bezvýkopové opravy</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="white-space:nowrap">Čistenie lapačov tukov</a>
+                                </li>
+                            </ul>
+
+                            <li>
+                                <a href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="openbtnsec xl:hidden text-white text-4xl float-right mt-6"
+                        onclick="openNavSec()">&#9776;</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="bg-[url('img/plumber.jpg')] bg-no-repeat bg-cover h-96 ">
+                <h1 class="fadeelemnt text-center pt-32 text-4xl lg:text-6xl text-sky-900 font-bold ">VAŠE SRAČKY NAŠA
+                    RADOSŤ</h1>
+            </div>
+            <div class="w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-6/12 mt-12 mx-auto">
+                <div class="fadeelemnt float-left mt-8 lg:w-5/12 ">
+                    <h2 class="text-2xl md:text-4xl pb-8">Zaoberáme sa komplexnou problematikou odpadového hospodárstva
+                    </h2>
+                    <p class="text-md md:text-lg pb-4 text-left">Interdum velit laoreet id donec. Nulla porttitor massa
+                        id neque. Dolor sit amet consectetur adipiscing elit Dolor sit
+                        amet consectetur adipiscing elit pellentesque
+                        habitant morbi.</p>
+                </div>
+
+                <div class="fadeelemnt mx-auto lg:float-right">
+                    <img src="img/Plumber-Joh.png" class="mx-auto pb-11 w-96 ">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-200">
+            <div class="flex-wrap flex grid-cols-2 gap-8 place-content-center py-32 mx-auto w-11/12 2xl:w-7/12">
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 inline-block ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit </p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit</p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit</p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit</p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit</p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" class="bg-white rounded-xl text-center w-96 h-auto border-neutral-800 ">
+                    <a href="">
+                        <img src="img/plumb.webp" class="w-96 rounded-t-xl " alt="">
+                        <h1 class="my-2 font-bold text-2xl">Čistenie kanalizácií</h1>
+                        <p class="p-4 text-lg">Interdum velit laoreet id donec. Nulla porttitor massa id neque. Dolor
+                            sit amet consectetur adipiscing elit Dolor sit amet consectetur adipiscing elit</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer class="bg-primary h-28 text-white">
+        <article class="p-5" style="text-align:center">
+            <p class="">ĽUDOVÍT ČERNUŠKA</p>
+            <p class="">UHLISKÁ 34 | 900 81 ŠENKVICE</p>
+            <p><a class="hover:text-yellow-700 active:text-yellow-700" href="tel:+4219"><i
+                        class="fa fa-phone pr-2 "></i>+421 911 222 333</a> <span class="footer-hidden">|</span>
+                <a class="hover:text-yellow-700 active:text-yellow-700" href="mailto:trubka@gmail.com"><span
+                        style="white-space:nowrap"><i class="fa fa-envelope px-2"></i>trubka@gmail.com</span></a>
+            </p>
+        </article>
+
+    </footer>
+
+    <script src="menu.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
