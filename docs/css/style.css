@@ -584,6 +584,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -650,6 +654,14 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .-skew-x-12 {
@@ -982,6 +994,10 @@ video {
 
 .hover\:w-48:hover {
   width: 12rem;
+}
+
+.hover\:w-52:hover {
+  width: 13rem;
 }
 
 .hover\:border-black:hover {
